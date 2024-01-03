@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>SINGLE PAGE WEB APP TEMPLATE</title>
+        <title>Tapéta otthon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Get started with HTML, CSS and JavaScript" />
-        <meta name="author" content="Rasmus Cederdorff" />
+        <meta name="description" content="Tapéta" />
+        <meta name="author" content="Tapéta otthon" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,20 +16,22 @@
             <!-------------- Navigation -------------->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#/">Zebra</a>
+                  <a class="navbar-brand" href="#/">
+                    <img src="./img/logo.png" class="w-100">
+                  </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav mx-auto">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#/">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#/kapcsolat">Kapcsolat</a>
+                        <a class="nav-link" href="#/ajanlatkeres">Ajánlatkérés</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#/refereciak">Referenciák</a>
+                        <a class="nav-link" href="#/referenciak">Referenciák</a>
                       </li>
                     </ul>
                   </div>
@@ -41,44 +43,58 @@
               <!-- home page -->
               <section id="home" class="page">
                 <header class="topbar">
-                  <h2>Home</h2>
                 </header>
-                <div class="row">
-                    <div class="col">
-                        <img src="./img/Fototapete          Federstern _ Komar_Vlies.jpeg" class="w-50"/>
-                    </div>
-                    <div class="col">
-                        <h1>Heading</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse massa augue, finibus et feugiat et, fermentum id ipsum. Nunc semper vitae ipsum non suscipit. Aenean tellus nisl, aliquam at orci at, mollis volutpat lorem.</p>
-                        <button>Referenciák</button>
-                    </div>
-                </div>
-                <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="fm position-relative">
+                  <img src="./img/mainimage.png" class="img-fluid" alt="Main Image">
+                  <div class="position-absolute start-50 translate-middle-x" style="bottom: 10%;">
+                      <button class="cta-button">Referenciák</button>
+                  </div>
+              </div>
+              
+              
+              
+              
+                <div class="row my-5">
+                  <div class="col-sm-12 col-md-6 align-self-center">
+                    <h3>Üdvözöljük a Minőség Világában!</h3>
+                    <p>
+                      Az otthon meghatározó elemei a falak. Mi itt vagyunk, hogy élettel töltsük meg az üres falakat. 
+                      Minden mozzanatunk egy kifinomult részlet, mely a magas minőség és a precizitás jegyében születik. 
+                      Engedje meg, hogy otthona magasabb szintre emelkedjen a mi tapétázó mestermunkáink által!
+                    </p>
+                   <button class="cta-button mb-5">Referenciák</button>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                      <img src="./img/image-text.png" class="img-fluid">
+                  </div>
+              </div>
+
+
+
+
+                <div id="carouselExampleCaptions" class="carousel slide mb-5">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./img/slider.png" class="d-block w-50 mx-auto" alt="...">
+                      <div class="carousel-item active w-10">
+                        <img src="./img/carosuel1.png" class="d-block img-fluid mx-auto" style="width: 400px; height: 400px;" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
+                         
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./img/slider.png" class="d-block w-50 mx-auto" alt="...">
+                        <img src="./img/carosuel2.png" class="d-block img-fluid mx-auto" style="width: 400px; height: 400px;" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                         
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./img/slider.png" class="d-block w-50 mx-auto" alt="...">
+                        <img src="./img/carosuel3.png" class="d-block img-fluid mx-auto" style="width: 400px; height: 400px;" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                  
                         </div>
                       </div>
                     </div>
@@ -89,74 +105,115 @@
                     </button>
                     <button src="./img/Go Back.png" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                       <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                      <img src="./img/Go Back.png" class="w-50">
+                      <img src="./img/Go Back.png" class="img-fluid">
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                  <div class="row row-cols-1 row-cols-md-3">
+
+
+
+
+                  <div class="fm">
+                    <img src="./img/img-full-width.png"/>
+                  </div>
+
+                  <div class="row row-cols-1 row-cols-md-3 m-5">
                   <div class="col">
                     <img src="./img/Handshake.png" class="d-flex mx-auto">
-                    <h3 class="d-flex justify-content-center">Heading</h3>
-                    <p class="text-center">Valami rövid szöveg ami ide kifér
-                        Valami rövid szöveg ami ide kifér
-                        Valami rövid szöveg ami ide kifér</p>
+                    <h3 class="d-flex justify-content-center">Megbízhatóság</h3>
+                    <p class="text-center">Több évtizedes tapasztalatunk és elégedett ügyfeleink szilárd bizonyítéka annak,
+                       hogy megbízható partnerek vagyunk minden tapétázási projektben.</p>
                   </div>
                   <div class="col">
                     <img src="./img/Best Seller.png" class="d-flex mx-auto">
-                    <h3 class="d-flex justify-content-center">Heading</h3>
-                    <p class="text-center">Valami rövid szöveg ami ide kifér
-                        Valami rövid szöveg ami ide kifér
-                        Valami rövid szöveg ami ide kifér</p>
+                    <h3 class="d-flex justify-content-center">Minőség</h3>
+                    <p class="text-center">Elkötelezettek vagyunk az iránt, hogy minden egyes részletre odafigyeljünk, 
+                      így ügyfeleink mindig a legjobbat kapják tőlünk.
+                    </p>
                   </div>
                   <div class="col">
                     <img src="./img/Resume.png" class="d-flex mx-auto">
-                    <h3 class="d-flex justify-content-center">Heading</h3>
-                    <p class="text-center">Valami rövid szöveg ami ide kifér
-                        Valami rövid szöveg ami ide kifér
-                        Valami rövid szöveg ami ide kifér</p>
+                    <h3 class="d-flex justify-content-center">Pontosság</h3>
+                    <p class="text-center">A projekt határidőinek pontos betartása és a precíz munkavégzés kiemelten fontos számunkra. 
+                      Az idő pénz, ezért minden erőfeszítésünkkel azon dolgozunk, hogy a terveknek megfelelően és időben végezzük el a feladatokat.</p>
                   </div>
                 </div>
+
                 <div class="row">
-                    <div class="col">
-                        <img src="./img/slider.png">
+                  <div class="col-sm-12 col-md-6">
+                        <img src="./img/image-text.png" class="img-fluid">
                     </div>
-                    <div class="col">
-                        <h3>Heading</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse massa augue, finibus et feugiat et, fermentum id ipsum. Nunc semper vitae ipsum non suscipit. Aenean tellus nisl, aliquam at orci at, mollis volutpat lorem.</p>
-                        <button>Referenciák</button>
+                    <div class="col-sm-12 col-md-6 align-self-center">
+                        <h3>Éljen A Színek És Textúrák Mesteri Harmóniájával!</h3>
+                        <p>
+                          Miért elégedjen meg a festett fallal, amikor az otthona egy valódi műalkotássá válhat az ön által választott tapétával?
+                          A festék unalmasan egyszínű, míg a tapéta a textúrák és mintázatok kavalkádját kínálja.
+                          Engedje meg, hogy otthona élénkebb és színesebb legyen a tapéta varázsával!
+                          A festett fal merev és monoton, míg a tapéta szabadon kifejezi egyediségét és stílusát.
+                          Ne korlátozza magát a falai egyszerű színével, válassza a tapétát, és hozza ki otthona valódi szépségét!
+                        </p>
+                        <button class="cta-button mb-5">Referenciák</button>
                     </div>
                 </div>
               </section>
           
-              <!-- about page -->
-              <section id="kapcsolat" class="page">
+              <!-- Ajanlatkeres page -->
+              <section id="ajanlatkeres" class="page m-5">
                 <header class="topbar">
-                  <h2>Kapcsolat</h2>
                 </header>
                 <div class="row">
-                    <div class="col">
-                        <img src="./img/slider.png">
-                    </div>
-                    <div class="col">
-                        <h3>Heading</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse massa augue, finibus et feugiat et, fermentum id ipsum. Nunc semper vitae ipsum non suscipit. Aenean tellus nisl, aliquam at orci at, mollis volutpat lorem.</p>
-                        <button>Referenciák</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  <div class="col-sm-12 col-md-6 align-self-center">
+                    <h3>Éljen A Színek És Textúrák Mesteri Harmóniájával!</h3>
+                    <p>
+                      Miért elégedjen meg a festett fallal, amikor az otthona egy valódi műalkotássá válhat az ön által választott tapétával?
+                      A festék unalmasan egyszínű, míg a tapéta a textúrák és mintázatok kavalkádját kínálja.
+                      Engedje meg, hogy otthona élénkebb és színesebb legyen a tapéta varázsával!
+                      A festett fal merev és monoton, míg a tapéta szabadon kifejezi egyediségét és stílusát.
+                      Ne korlátozza magát a falai egyszerű színével, válassza a tapétát, és hozza ki otthona valódi szépségét!
+                    </p>
                   </div>
-                  <button type="button" class="btn btn-primary">Send</button>
-                <p>Kapcsolat</p>
+                  <div class="col-sm-12 col-md-6">
+                    <img src="./img/pexels-max-rahubovskiy-6436795.png" class="img-fluid">
+                  </div>
+                </div>
+                <p class="text-center m-5">
+                  Ha el szeretné kerülni a hosszú egyeztetéseket, kérjük, töltse ki az űrlapunkat a weboldalunkon.
+                  A helyes adatok megadása nem csupán időt takarít meg Önnek, hanem nekünk is lehetőséget ad arra, hogy pontos ajánlatot készítsünk.
+                  Kérdéseink segítenek abban, hogy jobban megismerjük az elképzeléseit, így szolgáltatásaink még inkább az Ön igényeihez igazodnak.
+                </p>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 m-3">
+                      <label>Name</label>
+                      <input type="text" class="form-control" placeholder="Név" aria-label="Kiss Zsolt">
+                    </div>
+                    <div class="col-12 col-md-10 m-3">
+                      <label>Email</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Email">
+                    </div>
+                    <div class="col-12 col-md-10 m-3">
+                      <label>Lokáció</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Lokáció">
+                    </div>
+                    <div class="col-12 col-md-10 m-3">
+                      <label>Különleges feltételek vagy körülmények, amelyeket figyelembe kell venni a tapétázás során (pl.: magasság, nehezen hozzáférhető területek stb.).</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="valamit írunk ide">
+                    </div>
+                    <div class="col-12 col-md-10 m-3">
+                      <label>Tapéta típusa</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Tapéta típusa">
+                    </div>
+                    <div class="col-12 col-md-10 m-3">
+                      <label>Tapéta mennyisége</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Tapéta mennyisége">
+                    </div>
+                    <div class="col-12 col-md-10 m-3">
+                      <label>Kívánt időpont</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Kívánt időpont">
+                    </div>
+                    <div class="text-center mt-3">
+                      <button type="button" class="btn btn-primary">Küldés</button>
+                    </div>
+                  </div>
               </section>
           
               <!-- clients page -->
@@ -164,10 +221,61 @@
                 <header class="topbar">
                   <h2>Referenciák</h2>
                 </header>
+              
+              <div class="container mt-4">
+    <div class="row">
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <img src="./img/referenciak.jpg" class="w-100" alt="Image 1">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <img src="./img/referenciak2.jpg" class="w-100" alt="Image 2">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <img src="./img/referenciak3.jpg" class="w-100" alt="Image 3">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak4.jpg" class="w-100" alt="Image 4">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak5.jpg" class="w-100" alt="Image 5">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak6.jpg" class="w-100" alt="Image 6">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak7.jpg" class="w-100" alt="Image 7">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak8.png" class="w-100" alt="Image 8">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak9.png" class="w-100" alt="Image 9">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak10.png" class="w-100" alt="Image 10">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak11.png" class="w-100" alt="Image 11">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak12.png" class="w-100" alt="Image 12">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <img src="./img/referenciak13.JPG" class="w-100" alt="Image 13">
+      </div>
+
+     
+    </div>
+</div>
                 <p>Referenciák</p>
               </section>
           
             </main>
+
+            <footer class="footer">
+              <h3>Lépjen velünk kapcsolatba</h3>
+            </footer>
           
 
         <!-- SPA Router functionality  -->

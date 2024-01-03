@@ -5,7 +5,7 @@
 const _routes = {
     "#/": "home",
     "#/referenciak": "referenciak",
-    "#/kapcsolat": "kapcsolat",
+    "#/ajanlatkeres": "ajanlatkeres",
 };
 const _pages = document.querySelectorAll(".page");
 const _basePath = location.pathname.replace("index.html", ""); // remove index.html from path
