@@ -12,12 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $to = "szilagyidavid98@gmail.com";
   $headers = "From: $email";
 
-  if (mail($to, $subject, $message, $headers)) {
-    // Redirect to a thank you page or display a success message
-    header("Location: thank_you.html");
-    exit();
-  } else {
-    echo "Error sending email. Please try again.";
-  }
+//   if (mail($to, $subject, $message, $headers)) {
+//     // Redirect to a thank you page or display a success message
+//     header("Location: thank_you.html");
+//     exit();
+//   } else {
+//     echo "Error sending email. Please try again.";
+//   }
 }
 ?>
