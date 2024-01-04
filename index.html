@@ -216,40 +216,21 @@
                   </div>
 
 
-             <!-- form starting  -->
-             <form class="form-horizontal" method="post"
-             action="contact.php">
-           <div class="form-group">
-               <div class="col-sm-12">
-                   <!-- name  -->
-                   <input type="text" class="form-control"
-                          id="name" placeholder="NAME"
-                          name="name" value="" />
-               </div>
-           </div>
-
-           <div class="form-group">
-               <div class="col-sm-12">
-                   <!-- email  -->
-                   <input type="email" class="form-control"
-                          id="email" placeholder="EMAIL"
-                          name="email"
-                       value="" />
-               </div>
-           </div>
-
-           <!-- message  -->
-           <textarea class="form-control" rows="10"
-                     placeholder="MESSAGE" name="message">
-   </textarea>
-
-           <button class="btn btn-primary send-button"
-                   id="submit" type="submit" value="SEND">
-               <i class="fa fa-paper-plane"></i>
-               <span class="send-text">SEND</span>
-           </button>
-       </form>
-       <!-- end of form -->
+                  <form id="contactForm" action="process.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+            
+                    <input type="submit" value="Submit">
+                </form>
                   
                   
 
