@@ -22,11 +22,20 @@ body{
     border-radius: 4px;
 }
 .footer{
-    background-color: #ffffff;
+    background-color: #8E9EA6;  
 }
 @media (max-width: 767px) {
     .fm img {
         height: 200px; /* Set the desired height for mobile devices */
     }
 }
-
+.link{
+    text-decoration: none;
+    color: black;
+}
+.social-icons{
+    width: 3rem;
+}
+.contact-icon{
+    width: 10rem;
+}

@@ -1,29 +1,31 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect form data
     $name = $_POST["name"];
     $email = $_POST["email"];
-    $message = $_POST["message"];
+    $telepules = $_POST["telepules"];
+    $specialConditions = $_POST["special_conditions"];
+    $tapetaTipusa = $_POST["tapeta_tipusa"];
+    $tapetaMennyiseg = $_POST["tapeta_mennyiseg"];
+    $hatarido = $_POST["hatarido"];
+    
+    // Create the email message
+    $to = "kontakt@tapetaotthon.hu"; // Replace with your email address
+    $subject = "New Form Submission";
+    $message = "Name: $name\nEmail: $email\nTelepülés: $telepules\nKörülmények: $specialConditions\nTapéta típusa: $tapetaTipusa\nTapéta mennyisége: $tapetaMennyiseg\nHatáridő: $hatarido";
 
-    // Validate email address
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format";
-        exit;
-    }
+    // Set additional headers
+    $headers = "From: $email";
 
-    // Construct email message
-    $to = "szilagyidavid98@gmail.com"; // Replace with your email address
-    $subject = "New Contact Form Submission";
-    $headers = "From: $email\r\nReply-To: $email\r\n";
-    $mailBody = "Name: $name\nEmail: $email\nMessage:\n$message";
-
-    // Send email
-    if (mail($to, $subject, $mailBody, $headers)) {
-        echo "Message sent successfully";
+    // Send the email
+    if (mail($to, $subject, $message, $headers)) {
+        // Success: Send a JSON response
+        echo json_encode(["status" => "success", "message" => "Ajánlatkérődet megkaptuk. Hamarosan felvesszük veled a kapcsolatot!"]);
+        exit();
     } else {
-        echo "Failed to send message";
+        // Error handling: Send a JSON response
+        echo json_encode(["status" => "error", "message" => "Error sending email. Please try again later."]);
+        exit();
     }
-} else {
-    // Redirect if accessed directly
-    echo “itt vagyok”;
 }
 ?>
